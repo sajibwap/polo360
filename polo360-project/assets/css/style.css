@@ -1,0 +1,256 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+
+}
+a:hover { text-decoration: none }
+/*Global CSS*/
+.container {max-width: 1000px;margin: 0 auto;padding: 0 15px}
+.clear-fix:after,.clear-fix:before {display: table;content: "";clear: both}
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+.text-left {text-align: left;}
+
+/*Header CSS*/
+
+.header-area {
+    padding: 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header-menu {
+    padding: 17px 0;
+}
+
+.header-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header-menu a {
+    color: #333;
+    font-family: georgia;
+    transition: .3s;
+    display: block;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.header-menu ul li {
+    display: inline-block;
+    margin-left: 8px;
+    border-left: 1px dotted #000;
+    font-size: 17px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.header-menu a span {
+    color: #888;
+    font-size: 70%;
+    display: block;
+    text-transform: none;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+.header-menu a:hover {
+    color: #C2106C;
+}
+
+.header-menu a:hover span { 
+    color: #007ACC;
+}
+
+
+.header-menu ul li:before {
+    position: absolute;
+    content: "";
+    height: 0;
+    left: -2px;
+    border-left: 4px solid #901D78;
+    transition: .4s
+}
+
+.header-menu ul li:hover:before{
+    height: 100%;
+}
+
+/* banner  css */
+
+.banner-section {
+    background-color: #282828;
+    margin-bottom: 80px;
+    padding-top: 30px;
+}
+
+.banner-area img {
+    width: 100%;
+}
+
+.banner-area {margin-bottom: -30px;}
+
+
+/* Service area css */
+
+.sectin-title h2 {
+    font-size: 27px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 21px;
+    margin-bottom: 39px;
+    text-align: center;
+}
+
+.service-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.single-service {
+    flex-basis: 32%;
+}
+
+.single-service h3 {
+    color: #47D4F2;
+    font-family: georgia;
+    font-size: 25px;
+    display: block;
+}
+
+.single-service h3 span {
+    display: block;
+    font-family: sans-serif;
+    font-weight: normal;
+    color: #888;
+    font-size: 64%;
+}
+
+.single-service img {
+    border: 6px solid #DDD;
+    margin: 10px 0;
+}
+
+a.service-btn {
+    color: #007ACC;
+    /*background: #DDd;*/
+    padding: 6px 12px;
+    width: 180px;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+.btn-gredient {
+transition: .3s;
+background: rgba(189,189,189,1);/* Old Browsers */
+background: -moz-linear-gradient(left, rgba(189,189,189,1) 0%, rgba(255,255,255,1) 27%, rgba(222,222,222,1) 73%, rgba(222,222,222,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(189,189,189,1)), color-stop(27%, rgba(255,255,255,1)), color-stop(73%, rgba(222,222,222,1)), color-stop(100%, rgba(222,222,222,1)));/* Chrome, Safari4+ */
+background: -webkit-linear-gradient(left, rgba(189,189,189,1) 0%, rgba(255,255,255,1) 27%, rgba(222,222,222,1) 73%, rgba(222,222,222,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, rgba(189,189,189,1) 0%, rgba(255,255,255,1) 27%, rgba(222,222,222,1) 73%, rgba(222,222,222,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, rgba(189,189,189,1) 0%, rgba(255,255,255,1) 27%, rgba(222,222,222,1) 73%, rgba(222,222,222,1) 100%); /* IE 10+ */
+background: linear-gradient(to right, rgba(189,189,189,1) 0%, rgba(255,255,255,1) 27%, rgba(222,222,222,1) 73%, rgba(222,222,222,1) 100%);/* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdbdbd', endColorstr='#dedede', GradientType=1 );/* IE6-9 */
+}
+a.service-btn:hover {
+    background: #DDd;
+}
+a.service-btn i.fa.fa-long-arrow-right {
+  float: right;
+}
+/*==================================================
+ * Box Shadow Effect 
+ * ===============================================*/
+.effect7
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect7:before, .effect7:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect7:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+/*==================================================
+ * Box Shadow Effect 6 
+ * ===============================================*/
+.effect6
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect6:before, .effect6:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect6:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
