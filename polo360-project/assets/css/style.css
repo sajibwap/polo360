@@ -61,6 +61,7 @@ a:hover { text-decoration: none }
     display: block;
     font-weight: 900;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .header-menu ul li {
