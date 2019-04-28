@@ -26,7 +26,8 @@ h6 {
     font-weight: 700;
 }
 body {
-
+padding: 0;
+margin: 0;
 }
 a:hover { text-decoration: none }
 /*Global CSS*/
@@ -82,11 +83,14 @@ a:hover { text-decoration: none }
     font-weight: normal;
 }
 
-.header-menu a:hover {
+li.active {
+    position: relative;
+}
+.header-menu a:hover, li.active a {
     color: #C2106C;
 }
 
-.header-menu a:hover span { 
+.header-menu a:hover span, li.active a span { 
     color: #007ACC;
 }
 
@@ -100,7 +104,7 @@ a:hover { text-decoration: none }
     transition: .4s
 }
 
-.header-menu ul li:hover:before{
+.header-menu ul li:hover:before, .header-menu ul li.active:before {
     height: 100%;
 }
 
@@ -114,10 +118,10 @@ a:hover { text-decoration: none }
 
 .banner-area img {
     width: 100%;
-    margin-bottom: -25px;
+     margin-bottom: -25px;
 }
 
-.banner-area {margin-bottom: -30px;}
+/*.banner-area {margin-bottom: -30px;}*/
 
 
 /* Service area css */
@@ -136,14 +140,15 @@ a:hover { text-decoration: none }
 }
 
 .single-service {
-    flex-basis: 32%;
+    flex-basis: 31%;
 }
 
 .single-service h3 {
-    color: #47D4F2;
+    color: #0D6D9F;
     font-family: georgia;
     font-size: 25px;
     display: block;
+    font-weight: 400;
 }
 
 .single-service h3 span {
@@ -158,6 +163,10 @@ a:hover { text-decoration: none }
     border: 6px solid #DDD;
     margin: 10px 0;
 }
+.single-service p {
+    line-height: 1.7;
+    font-family: sans-serif;
+}
 
 a.service-btn {
     color: #007ACC;
@@ -167,6 +176,7 @@ a.service-btn {
     display: block;
     border: 1px solid #999;
     border-radius: 4px;
+    text-decoration: none;
 }
 .btn-gredient {
 transition: .3s;
