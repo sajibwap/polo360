@@ -4,22 +4,17 @@
     jQuery(document).ready(function($){
 
 
-        $(".embed-responsive iframe").addClass("embed-responsive-item");
-        $(".carousel-inner .item:first-child").addClass("active");
-        
-        $('[data-toggle="tooltip"]').tooltip();
+    	$(".header-menu ul li a").hover(function(){
+
+    		$(".header-menu ul li").removeClass("active");
+
+    		$(".header-menu ul li a").click(function(){
+    			$(".header-menu ul li").addClass("active").removeClass("active");
+    		});
+
+    	});
 
 
-
-        
-
-
-    });
-
-
-    jQuery(window).load(function(){
-
-        
     });
 
 
